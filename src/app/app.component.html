@@ -1,0 +1,20 @@
+<h1>
+  Sweet alert Angular 11 example
+</h1>
+
+<button [swal]="['Notification!', ' This is basic notification/', 'info']">
+  Click Me
+</button>
+
+<swal
+  #deleteRecord
+  title="Delete record?"
+  text="This cannot be undone"
+  icon="question"
+  [showCancelButton]="true"
+  [focusCancel]="true"
+  (confirm)="deleteFile(file)"
+>
+</swal>
+
+<button [swal]="deleteRecord">Delete Record</button>
