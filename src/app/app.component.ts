@@ -8,7 +8,6 @@ import { Component, VERSION, ViewChild } from "@angular/core";
 export class AppComponent {
   name = "Angular " + VERSION.major;
   file = "empty";
-  @ViewChild('deleteRecord') private deleteRecord: SwalComponent;
 
   public deleteFile(file: any): void {}
 }
